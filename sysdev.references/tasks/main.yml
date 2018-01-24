@@ -1,0 +1,7 @@
+---
+# tasks file for sysdev.references
+- name: Put the spoiler text in the tmp directory on the remote server.
+  no_log: true
+  copy:
+    content="{{text}}"
+    dest=/tmp/text.txt

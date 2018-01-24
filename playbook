@@ -1,0 +1,9 @@
+---
+- hosts: lunanode 
+  become: true
+  roles:
+    - sysdev.movies
+    - sysdev.references
+  tasks:
+    - name: simple ping 
+      ping: 
