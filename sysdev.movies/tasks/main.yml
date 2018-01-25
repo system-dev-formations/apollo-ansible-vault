@@ -1,7 +1,7 @@
 ---
 # tasks file for sysdev.movies
 - name: Put the spoiler text in the tmp directory on the remote server.
-  no_log: true
+  #no_log: true
   copy:
     content="{{spoiler_text}}"
     dest=/tmp/spoiler_text.txt
